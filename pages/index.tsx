@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ThemeToggle from "../components/ThemeToggle";
 
 const categories = [
   { name: "Спина", slug: "back", color: "#8ecae6" },
@@ -11,6 +12,7 @@ const categories = [
 export default function Home() {
   return (
     <main style={{ padding: "2rem" }}>
+      <ThemeToggle />
       <h1 style={{ fontSize: "2.5rem", fontWeight: 800, marginBottom: "1rem" }}>
         <span style={{ color: "#2196f3" }}>Sport Archive</span>
       </h1>

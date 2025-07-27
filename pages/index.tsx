@@ -1,10 +1,24 @@
-import React from "react";
+
+import Head from 'next/head';
+import ThemeToggle from '../components/ThemeToggle';
+import LanguageSwitcher from '../components/LanguageSwitcher';
 
 export default function Home() {
   return (
-    <main style={{ padding: "2rem", textAlign: "center" }}>
-      <h1>🏋️ Добро пожаловать в Sport Archive</h1>
-      <p>Здесь будут упражнения, категории и статьи.</p>
-    </main>
+    <>
+      <Head>
+        <title>Sport Archive</title>
+      </Head>
+      <main className="container">
+        <div className="header">
+          <h1>🏋️ Sport Archive</h1>
+          <div className="switchers">
+            <LanguageSwitcher />
+            <ThemeToggle />
+          </div>
+        </div>
+        <p>Категории, упражнения и статьи скоро появятся 👇</p>
+      </main>
+    </>
   );
 }
